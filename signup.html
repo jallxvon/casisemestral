@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets.css">
+    <link rel="icon" href="/assets/favicon-32x32.png">
+    <title>Registrarse: Definitely not Netflix</title>
+</head>
+<body>
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container navbar-inner d-flex justify-content-between align-items-center">
+      <a href="landing.html" class="logo mr-auto"><img src="assets/PngItem_1680211.png" alt="" ></a>
+      <div class="btn" style="float: right; padding-right: 30px;">
+        <a href="login.html" class="btn-login">Iniciar Sesion</a>
+      </div>
+    </div>
+  </header>
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Registrate</h2>
+        <h3>Crea tu <span> Cuenta</span></h3>
+        <p>Es mas facil de lo que te cuentan.</p>
+      </div>
+
+      <div class="row mt-5">
+
+        <div class="col-lg-8 mt-5 mt-lg-0">
+          <form action="" method="post" role="form" class="php-email-form">
+            <div class="form-row">
+              <div class="col-md-6 form-group">
+                Usuario: <br>
+                <input type="text" name="username" class="form-control" id="username"  data-rule="minlen:4" data-msg="Introduzca al menos 4 caracteres" />
+                <div class="validate"></div>
+              </div>
+              <div class="col-md-6 form-group">
+                Correo Electronico:<br>
+                <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Introduzca un email valido" />
+                <div class="validate"></div>
+              </div>
+            </div>
+            <div class="form-group">
+                Contrasena:<br>
+              <input type="password" class="form-control" name="password" id="subject" data-rule="minlen:4" data-msg="Introduzca una contrasena mas larga" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+                Repetir contrasena:<br>
+              <input type="password" name="password" data-rule="required" data-msg="Please write something for us"  data-msg="Las contrasenas deben ser identicas"></textarea>
+              <div class="validate"></div>
+            </div>
+            <div class="mb-3">
+              <div class="loading">Cargando</div>
+              <div class="error-message">Vuelve a intentarlo a ver que xopa</div>
+              <div class="sent-message">Cuenta creada con exito!</div>
+            </div>
+            <div class="text-center"><button type="submit">Registrarse</button></div>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+    <!-- <header class="landing-header">   
+        <div class="header-logo">
+            <a href="/landing.html">
+                <img src="assets/PngItem_1680211.png" id="logo" alt="logo">
+            </a>
+        </div>
+        <form>
+          <button class="login-btn" formaction="/login.html" >Log In</button>
+        </form>  
+    </header>
+    <main class="content">
+        <img class="bg-img" src="assets/jl.jpg" alt="">
+        <div class="main-content">
+            <div id="card">
+                <div id="card-content">
+                  <div id="card-title">
+                    <h2>Sign Up</h2>
+                    <div class="underline-title"></div>
+                  </div>
+                  <form class="form">
+                    <label for="user-email" style="padding-top:13px">
+                        &nbsp;Email
+                      </label>
+                    <input id="user-email" class="form-content" type="email" name="email" autocomplete="on" required />
+                    <label for="username" style="padding-top:13px">
+                        &nbsp;Username
+                      </label>
+                    <input id="username" class="form-content" type="text" name="username" autocomplete="on" required />
+                    <div class="form-border"></div>
+                    <label for="user-password" style="padding-top:22px">&nbsp;Password
+                      </label>
+                    <input id="user-password" class="form-content" type="password" name="password" required />
+                    <label for="user-password-verification" style="padding-top:22px">&nbsp;Verify your password
+                    </label>
+                  <input id="user-password" class="form-content" type="password" name="password" required />
+                    <div class="form-border"></div>
+                    <input id="submit-btn" type="submit" name="submit" value="Sign Up" formaction="/browse.html"/>
+                  </form>
+                </div>
+              </div>
+        </div>
+    </main> -->
+</body>
+</html>
