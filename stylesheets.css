@@ -1847,6 +1847,40 @@ section {
   text-decoration: none;
 }
 
+.column {
+  box-sizing: border-box;
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row { width: 1500px;
+  margin-left: auto;
+  }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(228, 226, 247, 0.5); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
 
 /* html, body{
     height: 100%;
